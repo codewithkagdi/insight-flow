@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insight Flow </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="header">
+        <nav id="navbar">
+            <div class="centered-title">Insight Flow </div>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><button id="search-toggle">Search</button></li>
+            </ul>
+        </nav>
+        <div id="popup-menu" class="popup-menu">
+            <div class="popup-content">
+                <button id="close-popup" class="close-popup">×</button>
+                <ul>
+                    <li><a href="profile.html">User Profile</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="upload.html">Upload</a></li>
+                    <li><a href="bookmark.html">Bookmark</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="slider">
+                <div class="slides">
+                    <img src="photos\photo4.jpg" alt="Image 1" data-info="Image 1 Info">
+                    <img src="photos\photo5.jpg" alt="Image 2" data-info="Image 2 Info">
+                    <img src="photos\photo6.jpg" alt="Image 3" data-info="Image 3 Info">
+                    <img src="photos\photo7.jpg" alt="Image 4" data-info="Image 4 Info">
+                    <img src="photos\photo8.jpg" alt="Image 5" data-info="Image 5 Info">
+                    <img src="photos\photo9.jpg" alt="Image 6" data-info="Image 6 Info">
+                    <img src="photos\photo10.jpg" alt="Image 7" data-info="Image 7 Info">
+                    <img src="photos\photo11.jpg" alt="Image 8" data-info="Image 8 Info">
+                    <img src="photos\photo12.jpg" alt="Image 9" data-info="Image 9 Info">
+                    <img src="photos\photo13.jpg" alt="Image 10" data-info="Image 10 Info">
+                    <img src="photos\photo14.jpg" alt="Image 10" data-info="Image 10 Info">
+                    <img src="photos\photo15.jpg" alt="Image 10" data-info="Image 10 Info">
+
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="home" class="section">
+            <h2>Home</h2>
+            <div class="intro-container">
+                <h1>Welcome to the E-Library</h1>
+                <p>Your one-stop platform to access a wide range of educational resources. Whether you're looking for textbooks, research papers, or tutorials, we’ve got you covered. Our platform enables students, teachers, and researchers to upload, discover, and share study materials with a community that values learning.</p>
+                <p>Explore a world of knowledge in various subjects, from Science and Technology to Humanities and Arts. Easily bookmark your favorite resources, upload new material, and stay on top of your studies by searching through thousands of curated resources.</p>
+                <p>Join us in fostering a collaborative learning environment where sharing is encouraged and learning is limitless.</p>
+                <a href="upload.html" class="cta-button">Get Started by Uploading!</a>
+            </div>
+            <div class="feature-container">
+                <div class="feature">
+                    <img src="./photos/photo1.png" alt="Feature 1" />
+                    <h3>Wide Range of Resources</h3>
+                    <p>Access a diverse collection of study materials across all subjects.</p>
+                </div>
+                <div class="feature">
+                    <img src="./photos/photo2.webp" alt="Feature 2" />
+                    <h3>User-Friendly Uploading</h3>
+                    <p>Effortlessly upload your own materials and share them with others.</p>
+                </div>
+                <div class="feature">
+                    <img src="./photos/photo3.jpg" alt="Feature 3" />
+                    <h3>Community Feedback</h3>
+                    <p>Receive constructive feedback from peers to enhance your work.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

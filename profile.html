@@ -1,0 +1,99 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile </title>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+    <header id="header">
+        <nav id="navbar">
+            <div class="centered-title">Insight Flow </div>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="upload.html">Upload</a></li>
+                
+
+            </ul>
+        </nav>
+        <div id="popup-menu" class="popup-menu">
+            <div class="popup-content">
+                <button id="close-popup" class="close-popup">×</button>
+                <ul>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="upload.html">Upload</a></li>
+                    <li><a href="bookmark.html">Bookmark</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="profile" class="section">
+            <div class="profile-header">
+                <div class="profile-photo">
+                    <img src="https://via.placeholder.com/150" alt="User Profile Photo">
+                </div>
+                <div class="profile-info">
+                    <h1>John Doe</h1>
+                    <div class="profile-stats">
+                        <span><strong>Books Borrowed: </strong>15</span><br>
+                        <span><strong>Favorites: </strong>8</span><br>
+                        <span><strong>Joined: </strong>March 2023</span>
+                    </div>
+                    <button id="edit-profile">Edit Profile</button>
+                </div>
+            </div>
+
+            <div id="borrowed-books" class="section">
+                <h2>Borrowed Books</h2>
+                <div class="books-grid">
+                    <div class="book">
+                        <img src="photos\photo21.jpg" alt="Book 1">
+                        <h3>The Great Gatsby</h3>
+                        <p><a href="#">Return Book</a></p>
+                    </div>
+                    <div class="book">
+                        <img src="photos\photo22.jpg" alt="Book 2">
+                        <h3>1984</h3>
+                        <p><a href="#">Return Book</a></p>
+                    </div>
+                    <div class="book">
+                        <img src="photos\photo23.jpg" alt="Book 3">
+                        <h3>To Kill a Mockingbird</h3>
+                        <p><a href="#">Return Book</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="favorite-books" class="section">
+                <h2>Favorite Books</h2>
+                <div class="books-grid">
+                    <div class="book">
+                        <img src="photos\photo24.jpg" alt="Book 1">
+                        <h3>Pride and Prejudice</h3>
+                    </div>
+                    <div class="book">
+                        <img src="photos\photo25.jpg" alt="Book 2">
+                        <h3>Brave New World</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/script.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>

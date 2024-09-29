@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Library Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <header id="header"></header>
+        <nav id="navbar">
+            <div class="centered-title">Insight Flow </div>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+
+            </ul>
+        </nav>
+        <div id="popup-menu" class="popup-menu">
+            <div class="popup-content">
+                <button id="close-popup" class="close-popup">×</button>
+                <ul>
+                    <li><a href="profile.html">User Profile</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="upload.html">Upload</a></li>
+                    <li><a href="bookmark.html">Bookmark</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="feedback-container">
+        <h1>E-Library Platform Feedback Form</h1>
+        <form id="feedbackForm">
+            <label for="overall-experience">1. How would you rate your overall experience using the platform?</label>
+            <div class="star-rating" id="overall-experience">
+                <input type="radio" name="overall" value="5"><span>⭐⭐⭐⭐⭐</span>
+            </div>
+
+            <label for="navigation">2. How easy is it to navigate and find resources on the platform?</label>
+            <select id="navigation">
+                <option value="Very Easy">Very Easy</option>
+                <option value="Easy">Easy</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Difficult">Difficult</option>
+                <option value="Very Difficult">Very Difficult</option>
+            </select>
+
+            <label for="content-quality">3. How satisfied are you with the quality of the resources available?</label>
+            <div class="star-rating" id="content-quality">
+                <input type="radio" name="content" value="5"><span>⭐⭐⭐⭐⭐</span>
+            </div>
+
+            <pre>             
+
+            </pre>
+            <label for="features">1. Which feature do you find the most useful?</label>
+            <div id="features">
+                <input type="checkbox" name="feature" value="Search & Filter Options"> Search & Filter Options <br>
+                <input type="checkbox" name="feature" value="Recommendation System"> Recommendation System <br>
+                <input type="checkbox" name="feature" value="File Uploading"> File Uploading <br>
+                <input type="checkbox" name="feature" value="User Profiles"> User Profiles <br>
+                <input type="checkbox" name="feature" value="Bookmarking & Favorites"> Bookmarking & Favorites <br>
+                <input type="checkbox" name="feature" value="Rating & Feedback"> Rating & Feedback
+            </div>
+
+            <label for="improvement">Are there any features that you would like to see improved or added?</label>
+            <textarea id="improvement" rows="4"></textarea>
+
+            <label for="uploading-downloading">5. How satisfied are you with the ease of uploading and downloading resources?</label>
+            <div class="star-rating" id="uploading-downloading">
+                <input type="radio" name="uploading" value="5"><span>⭐⭐⭐⭐⭐</span>
+            </div>
+
+            <label for="recommendation">2. How accurate do you find the recommended resources?</label>
+            <select id="recommendation">
+                <option value="Very Accurate">Very Accurate</option>
+                <option value="Accurate">Accurate</option>
+                <option value="Neutral">Neutral</option>
+                <option value="Inaccurate">Inaccurate</option>
+                <option value="Very Inaccurate">Very Inaccurate</option>
+            </select>
+
+            <label for="design">3. How would you rate the design and layout of the platform?</label>
+            <select id="design">
+                <option value="Excellent">Excellent</option>
+                <option value="Good">Good</option>
+                <option value="Average">Average</option>
+                <option value="Poor">Poor</option>
+                <option value="Very Poor">Very Poor</option>
+            </select>
+
+            <label for="bugs">4. Have you encountered any bugs or issues while using the platform?</label>
+            <input type="radio" name="bugs" value="Yes"> Yes
+            <input type="radio" name="bugs" value="No"> No
+
+            <label for="bug-description">If yes, please describe:</label>
+            <textarea id="bug-description" rows="4"></textarea>
+
+            <label for="comments">5. Additional Comments:</label>
+            <textarea id="comments" rows="4"></textarea>
+
+            <button type="submit">Submit Feedback</button>
+        </form>
+    </div>
+    <script src="feedback.js"></script>
+</body>
+</html>

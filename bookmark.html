@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarking System</title>
+    <link rel="stylesheet" href="bookmark.css">
+</head>
+<body>
+    <header id="header"></header>
+        <nav id="navbar">
+            <div class="centered-title">Insight Flow </div>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><button id="search-toggle">Search</button></li>
+            </ul>
+        </nav>
+        <div id="popup-menu" class="popup-menu">
+            <div class="popup-content">
+                <button id="close-popup" class="close-popup">×</button>
+                <ul>
+                    <li><a href="profile.html">User Profile</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="upload.html">Upload</a></li>
+                    <li><a href="bookmark.html">Bookmark</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Books Available</h1>
+        <div class="book-list">
+            <div class="book">
+                <h3>Book Title 1</h3>
+                <p>Author: John Doe</p>
+                <button class="bookmark-btn" data-id="1">Bookmark</button>
+            </div>
+            <div class="book">
+                <h3>Book Title 2</h3>
+                <p>Author: Jane Doe</p>
+                <button class="bookmark-btn" data-id="2">Bookmark</button>
+            </div>
+            <div class="book">
+                <h3>Book Title 3</h3>
+                <p>Author: Jane Doe</p>
+                <button class="bookmark-btn" data-id="2">Bookmark</button>
+            </div>
+            <div class="book">
+                <h3>Book Title 4</h3>
+                <p>Author: Jane Doe</p>
+                <button class="bookmark-btn" data-id="2">Bookmark</button>
+            </div>
+            <div class="book">
+                <h3>Book Title 5</h3>
+                <p>Author: Jane Doe</p>
+                <button class="bookmark-btn" data-id="2">Bookmark</button>
+            </div>
+        </div>
+        <h2>Your Bookmarks</h2>
+        <ul id="bookmarks"></ul>
+    </div>
+    <script src="bookmark.js"></script>
+</body>
+</html>

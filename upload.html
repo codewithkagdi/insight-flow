@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPLOAD</title>
+    <link rel="stylesheet" href="upload.css">
+</head>
+<body>
+    <header id="header">
+        <nav id="navbar">
+            <div class="centered-title">Insight Flow </div>
+            <!-- <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div> -->
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <!-- <li><button id="search-toggle">Search</button></li> -->
+            </ul>
+        </nav>
+        <div id="popup-menu" class="popup-menu">
+            <div class="popup-content">
+                <button id="close-popup" class="close-popup">×</button>
+                <ul>
+                    <li><a href="profile.html">User Profile</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="upload.html">Upload</a></li>
+                    <li><a href="bookmark.html">Bookmark</a></li>
+                    <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="upload">
+            <h2>Upload Study Material</h2>
+            <input type="file" id="file-upload" />
+            <button onclick="uploadResource()">Upload</button>
+            <div id="upload-status"></div>
+            <h3>Uploaded Files:</h3>
+            <ul id="uploaded-files-list"></ul>
+        </section>
+    </main>
+
+    <script src="upload.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> librabry</title>
+    <link rel="stylesheet" href="search.css">
+</head>
+<body>
+    <header id="header">
+        <nav id="navbar">
+            <div class="centered-title">Insight Flow </div>
+            <div class="hamburger" id="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul id="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="upload.html">Upload</a></li>
+                
+
+            </ul>
+        </nav>
+        <div id="popup-menu" class="popup-menu">
+            <div class="popup-content">
+                <button id="close-popup" class="close-popup">×</button>
+                <ul>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="search.html">Search</a></li>
+                    <li><a href="upload.html">Upload</a></li>
+                    <li><a href="bookmark.html">Bookmark</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="search">
+            <div id="search-container">
+                <input type="text" id="search-bar" placeholder="Search for books, authors, or tags" />
+                <button id="search-button" onclick="searchResources()">Search</button>
+            </div>
+            <ul id="search-results"></ul>
+        </section>
+
+        <section id="featured-books">
+            <h2>Recommended Books</h2>
+            <div class="book-container">
+                <div class="book">
+                    <img src="photos\photo16.jpg" alt="Book 1">
+                    <h3>The Pragmatic Programmer</h3>
+                    <a href="https://pragprog.com/titles/tpp20/the-pragmatic-programmer-20th-anniversary-edition/">Official Site</a>
+                </div>
+                <div class="book">
+                    <img src="photos\photo17.jpg" alt="Book 2">
+                    <h3>Clean Code</h3>
+                    <a href="https://www.informit.com/store/clean-code-a-handbook-of-agile-software-craftsmanship-9780132350884">Official Site</a>
+                </div>
+                <div class="book">
+                    <img src="photos\photo18.jpg" alt="Book 3">
+                    <h3>Introduction to Algorithms</h3>
+                    <a href="https://mitpress.mit.edu/9780262046305/introduction-to-algorithms/">Official Site</a>
+                </div>
+                <div class="book">
+                    <img src="photos\photo19.jpg" alt="Book 4">
+                    <h3>Design Patterns</h3>
+                    <a href="https://www.pearson.com/store/p/design-patterns-elements-of-reusable-object-oriented-software/P100VJ8ZPE.html">Official Site</a>
+                </div>
+                <div class="book">
+                    <img src="photos\photo20.jpg" alt="Book 5">
+                    <h3>JavaScript: The Good Parts</h3>
+                    <a href="https://www.oreilly.com/library/view/javascript-the-good/9780596517748/">Official Site</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="search.js"></script>
+</body>
+</html>
